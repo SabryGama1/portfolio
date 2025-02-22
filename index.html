@@ -454,7 +454,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 text-center text-lg-start">
-          <p class="mb-3 mb-lg-0">Copyright © 2025 by <a href="#" class="fw-500">Sabry Gamal</a> | All Rights Reserved.
+          <p class="mb-3 mb-lg-0">Copyright &copy; <span id="current-year"></span> by <a href="#" class="fw-500">Sabry Gamal</a> | All Rights Reserved.
           </p>
         </div>
         <div class="col-lg-6">
@@ -481,7 +481,10 @@
       class="fa fa-chevron-up"></i></a>
 
 
-
+      <script>
+        // الحصول على السنة الحالية وتحديث النص
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+      </script>
   <!-- JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
